@@ -17,3 +17,5 @@ RUN wget -O "/var/tmp/jdk-8u40-linux-x64.rpm" --no-check-certificate --no-cookie
 # install jdk
 RUN rpm -ivh /var/tmp/jdk-8u40-linux-x64.rpm
 
+# Timezone
+RUN timedatectl set-timezone Asia/Tokyo
